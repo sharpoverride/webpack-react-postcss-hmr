@@ -9,7 +9,7 @@ export default class Demo extends React.Component {
 
     render() {
         return (<div className={this.props.css.item}>
-            <h1>Hello, Mihai!</h1>
+            <h1>Hello Mihai!</h1>
         </div>);
     }
 }

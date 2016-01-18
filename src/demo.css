@@ -1,3 +1,7 @@
+:root {
+    --mainColor: yellow;
+}
 .item {
-  font-size: 15px;
+  font-size: 12px;
+  background-color: var(--mainColor);
 }
