@@ -36,6 +36,8 @@
     "react-styleable": "^2.0.0",
     "react-transform-hmr": "^1.0.1",
     "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
     "webpack": "^1.12.11",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0"

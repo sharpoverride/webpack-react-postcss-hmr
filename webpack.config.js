@@ -9,7 +9,7 @@ module.exports = {
         './src/main'
     ],
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', '.ts', '.tsx']
     },
     output: {
         path: path.join(__dirname, 'dist'),
@@ -22,8 +22,8 @@ module.exports = {
     ],
      module: {
         loaders: [{
-            test: /\.jsx?$/,
-            loaders: ['babel'],
+            test: /\.tsx?$/,
+            loaders: ['ts-loader'],
             include: path.join(__dirname, 'src')
         }, {
             test: /\.jpg/,
