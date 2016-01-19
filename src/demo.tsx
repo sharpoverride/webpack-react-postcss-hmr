@@ -5,9 +5,10 @@ const style = css;
 export default class Demo extends React.Component<any, any> {
     static displayName = 'Demo';
 
-    render() {
+    render() { 
         return (<div className={style.item}>
-            <h1>Hello Mihai!</h1>
+            <h1>Hello, Mihai!</h1>
+            <p>Some content</p>
         </div>);
     }
 }
