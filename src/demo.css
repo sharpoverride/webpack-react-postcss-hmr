@@ -1,7 +1,7 @@
 :root {
-    --mainColor: yellow;
+    /*--mainColor: transparent;*/
 }
 .item {
   font-size: 12px;
-  background-color: var(--mainColor);
+  /*background-color: var(--mainColor);*/
 }

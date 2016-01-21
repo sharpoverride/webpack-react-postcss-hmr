@@ -2,23 +2,27 @@ var path = require('path');
 var webpack = require('webpack');
 var cssnext = require('postcss-cssnext');
 
+var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+
 module.exports = {
     devtool: 'eval',
-    entry: [
-        'webpack-hot-middleware/client',
-        './src/main'
-    ],
+    entry: {
+        h: 'webpack-hot-middleware/client',
+        main: './src/main',
+        second: './src/second'
+    },
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: 'chunk.[name].js',
         publicPath: '/js/'
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new CommonsChunkPlugin("commons.chunk.js")
     ],
      module: {
         loaders: [{
